@@ -23,8 +23,8 @@ const Register = () => {
             </div>
 
             <div className="input-group">
-              <label htmlFor="password">Username: </label>
-              <input type="password" name="password" placeholder='Enter your username'/>
+              <label htmlFor="username">Username: </label>
+              <input type="username" name="username" placeholder='Enter your username'/>
             </div>
 
 
