@@ -17,8 +17,7 @@ async function registerUserController(req, res) {
   if (isUserExisting) {
     return res.status(400).json({ message: "User already exists!" });
   }
-  // const newUser = new userModel({username, email, password})
-  // await newUser.save()
+  
 
   const hash = await bcrypt.hash(password, 10);
   const user = await userModel.create({
