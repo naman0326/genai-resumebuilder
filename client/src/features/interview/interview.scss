@@ -1,0 +1,139 @@
+.home{
+    width: 100%;
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 1.5rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .home-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .report-form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    textarea{
+        border: none;
+        outline: none;
+        padding: 0.72rem 1rem;
+        border-radius: 0.60rem;
+        font-family: inherit;
+        font-size: 1rem;
+        resize: vertical;
+    }
+
+    input[type="file"]{
+        padding: 0.72rem 1rem;
+        border-radius: 0.60rem;
+        background-color: #2c2b2b;
+        cursor: pointer;
+    }
+
+    .file-name{
+        font-size: 0.85rem;
+        opacity: 0.8;
+    }
+
+    .hint{
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
+
+    .error{
+        color: rgb(255, 120, 120);
+    }
+
+    button:disabled{
+        opacity: 0.6;
+        cursor: wait;
+    }
+
+    .report{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .match-score{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #2c2b2b;
+
+        strong{
+            font-size: 2.5rem;
+            color: rgb(220, 110, 110);
+        }
+    }
+
+    .report-section{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .card{
+        padding: 1rem;
+        border-radius: 0.75rem;
+        background-color: #2c2b2b;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        line-height: 1.5;
+
+        summary{
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        p{
+            margin-top: 0.5rem;
+        }
+
+        ul{
+            padding-left: 1.25rem;
+        }
+    }
+
+    .skill-gaps{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li{
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            background-color: #2c2b2b;
+        }
+    }
+
+    .severity{
+        padding: 0.1rem 0.6rem;
+        border-radius: 1rem;
+        font-size: 0.8rem;
+        text-transform: capitalize;
+
+        &.low{ background-color: #2f5d3a; }
+        &.medium{ background-color: #7a5b1e; }
+        &.high{ background-color: rgb(145, 57, 57); }
+    }
+}

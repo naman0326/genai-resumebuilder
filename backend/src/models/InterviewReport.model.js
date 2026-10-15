@@ -44,7 +44,7 @@ const technicalQuestionSchema = new mongoose.Schema({
         required: [true, "Technical question is required"]
     },
 
-    intentions: {
+    intention: {
         type: String,
         required: [true, "Intention is required"]
     },
@@ -64,10 +64,10 @@ const technicalQuestionSchema = new mongoose.Schema({
 const behavioralQuestionSchema = new mongoose.Schema({
     question: {
         type: String,
-        required: [true, "Technical question is required"]
+        required: [true, "Behavioral question is required"]
     },
 
-    intentions: {
+    intention: {
         type: String,
         required: [true, "Intention is required"]
     },
@@ -114,11 +114,21 @@ const preparationPlanSchema = new mongoose.Schema({
             required: [true, "Tasks are required"]
         }
     ]
+}, {
+    _id: false
 })
 
 
 
 const interviewReportSchema = new mongoose.Schema({
+
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "users",
+        required: [true, "User is required"]
+    }
+,
+
     jobDescription: {
         type: String,
         required: [true, "Job description is required"]
