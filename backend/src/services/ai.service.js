@@ -1,9 +1,10 @@
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-// Free models on OpenRouter; the second one is used if the first is rate-limited or down
+// Free models on OpenRouter that support strict JSON schema output;
+// the second one is used if the first is rate-limited or down
 const OPENROUTER_MODELS = [
-    "google/gemma-4-31b-it:free",
-    "google/gemma-4-26b-a4b-it:free"
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "dots-studio/dots-3-note-preview:free"
 ]
 
 
